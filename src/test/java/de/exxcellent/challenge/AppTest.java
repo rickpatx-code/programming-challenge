@@ -5,6 +5,8 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+import java.io.IOException;
+
 /**
  * Example JUnit 5 test case.
  * @author Benjamin Schmid <benjamin.schmid@exxcellent.de>
@@ -24,7 +26,7 @@ class AppTest {
     }
 
     @Test
-    void runFootball() {
+    void runFootball() throws IOException {
         App.main("--football", "football.csv");
     }
 
