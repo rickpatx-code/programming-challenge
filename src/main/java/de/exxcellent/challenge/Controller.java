@@ -3,6 +3,7 @@ package de.exxcellent.challenge;
 import java.io.IOException;
 
 import de.exxcellent.challenge.Reader.CsvReader;
+import de.exxcellent.challenge.SpreadCalculators.FootballSpreadCalculator;
 import de.exxcellent.challenge.SpreadCalculators.WeatherSpreadCalculator;
 
 /**
@@ -24,6 +25,13 @@ public class Controller {
 		WeatherSpreadCalculator weatherCsv = new WeatherSpreadCalculator();			
 		
 		return weatherCsv.getTargetWithMinSpread(csv.read("src/main/resources/de/exxcellent/challenge/weather.csv"));		
+	}
+	
+	public String MinSpreadFootballCSV() throws IOException {
+		CsvReader csv = new CsvReader();		
+		FootballSpreadCalculator footballCsv = new FootballSpreadCalculator();			
+		
+		return footballCsv.getTargetWithMinSpread(csv.read("src/main/resources/de/exxcellent/challenge/football.csv"));		
 	}
 }
 
