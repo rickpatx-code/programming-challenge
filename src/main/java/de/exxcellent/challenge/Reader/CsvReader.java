@@ -9,7 +9,7 @@ import java.util.List;
 import de.exxcellent.challenge.interfaces.Reader;
 
 /**
- * Class to generate a List of String-Arrays out of a CSV-File
+ * Class to generate a List of String-Arrays out of a CSV-File - using Reader-Interface
  * 
  * @author Patrick Gröber
  *
